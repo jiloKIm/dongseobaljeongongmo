@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Page</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      text-align: center; /* Centers the content */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 50px;
+    }
+
+    .logo {
+      width: 500px;
+      height: 500px;
+      margin: 0 auto 50px; /* Centers the logo and provides spacing */
+      background-image: url('logo.png'); /* Replace with your logo path */
+      background-size: cover;
+    }
+
+    .button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+      width: 80%; /* Set a max-width for the buttons */
+      max-width: 300px; /* Ensures buttons don't stretch too far on wider screens */
+    }
+
+    .secondary-button {
+      background-color: white;
+      color: #4CAF50;
+      border: 2px solid #4CAF50; /* Green border */
+    }
+
+    .footer {
+      margin-top: 50px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<div class="content">
+  <h1>SERVICE</h1>
+  <div class="logo"></div> <!-- Logo will go here -->
+  <div class="footer">안녕하세요 !<span th:text="${fullName}">default class name</span></div>
+  <a href="/build/save" class="button">모델 돌려보기</a>
+  <a href="/build/result/1" class="button secondary-button">성능 평가</a>
+  <a href="/build/result/1" class="button">당신의 에너지 효율 전략</a>
+
+  <div class="footer">sep</div>
+</div>
+
+</body>
+</html>
